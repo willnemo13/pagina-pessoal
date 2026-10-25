@@ -68,6 +68,7 @@
         <a href="index.html">Início</a>
         <a href="sobre.html">Sobre mim</a>
         <a href="#interesses">Meus interesses</a>
+        <a href="#contato">Entre em contato</a>
     </nav>
 
     <main>
@@ -99,6 +100,41 @@
             <h2>Explore o site</h2>
             <p>Na <a href="sobre.html">página Sobre mim</a>, compartilho mais informações sobre meus interesses e objetivos.</p>
         </section>
+        ```html
+<section id="contato">
+    <h2>Entre em contato</h2>
+
+    <form>
+        <fieldset>
+            <legend>Envie sua mensagem</legend>
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" id="assunto" name="assunto" required>
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem"
+                    rows="5" cols="40" required></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+</section>
+```
     </main>
 
     <footer>
