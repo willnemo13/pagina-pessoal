@@ -22,9 +22,10 @@
     </nav>
 
     <main>
-        <section>
+        <section class="cartao">
             <h2>Apresentação</h2>
-            <img src="img/foto.jpg" alt="Foto pessoal de Will Gonçalves">
+
+            <img class="foto-perfil" src="img/foto.jpg" alt="Foto pessoal de Will Gonçalves">
 
             <p>Meu nome é Will Gonçalves e sou estudante do curso Técnico em Informática para Internet.</p>
 
@@ -33,53 +34,56 @@
             <p>Estou começando a desenvolver minhas habilidades na criação de páginas para a internet e esta atividade é uma oportunidade para praticar HTML e aprender a organizar melhor um site.</p>
         </section>
 
-        <section id="interesses">
+        <section class="cartao" id="interesses">
             <h2>Meus hobbies e interesses</h2>
 
             <p>Nos meus momentos livres, gosto de atividades que me divertem e também ajudam no meu desenvolvimento.</p>
 
-            <ul>
+            <ul class="lista-interesses">
                 <li><strong>Futebol:</strong> gosto de jogar, me divertir com os amigos e acompanhar o esporte.</li>
                 <li><strong>Tecnologia:</strong> tenho curiosidade sobre computadores, programas, novidades tecnológicas e programação.</li>
                 <li><strong>Estudar:</strong> gosto de aprender coisas novas, ampliar meus conhecimentos e desenvolver habilidades para o futuro.</li>
             </ul>
         </section>
 
-        <section>
+        <section class="cartao">
             <h2>O que quero aprender</h2>
+
             <p>Quero continuar aprendendo sobre desenvolvimento web e descobrir como transformar ideias em páginas e projetos que funcionem na internet.</p>
+
             <p>Acredito que praticar, pesquisar e ter dedicação são partes importantes do processo de aprendizagem.</p>
         </section>
 
-        <section>
+        <section class="cartao">
             <h2>Explore o site</h2>
+
             <p>Na <a href="sobre.html">página Sobre mim</a>, compartilho mais informações sobre meus interesses e objetivos.</p>
         </section>
 
-        <section id="contato">
+        <section class="cartao" id="contato">
             <h2>Entre em contato</h2>
 
-            <form>
+            <form class="form-contato">
                 <fieldset>
                     <legend>Envie sua mensagem</legend>
 
                     <p>
-                        <label for="nome">Nome:</label><br>
+                        <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
                     </p>
 
                     <p>
-                        <label for="email">E-mail:</label><br>
+                        <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required>
                     </p>
 
                     <p>
-                        <label for="assunto">Assunto:</label><br>
+                        <label for="assunto">Assunto:</label>
                         <input type="text" id="assunto" name="assunto" required>
                     </p>
 
                     <p>
-                        <label for="mensagem">Mensagem:</label><br>
+                        <label for="mensagem">Mensagem:</label>
                         <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
                     </p>
 
@@ -96,4 +100,3 @@
     </footer>
 </body>
 </html>
-
