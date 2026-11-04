@@ -1,45 +1,28 @@
-
 # Minha Página Pessoal
 
-## Sobre o projeto
+Este projeto foi desenvolvido como atividade da disciplina de Programação Web I.
 
-Este projeto foi desenvolvido como atividade prática da disciplina de Programação Web I, com o objetivo de aplicar conceitos de HTML e CSS na criação e estilização de páginas para a internet.
-
-O site apresenta informações pessoais, hobbies, interesses, objetivos e um formulário de contato.
+O objetivo é praticar HTML e CSS na criação de uma página pessoal, apresentando algumas informações, hobbies, interesses e um formulário de contato.
 
 ## Tecnologias utilizadas
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 
-## Páginas do projeto
+## Páginas
 
-- **Página inicial:** apresentação pessoal, hobbies, interesses e formulário de contato.
-- **Sobre mim:** informações sobre meus estudos, interesses e objetivos.
+- **index.html:** página inicial com minha apresentação e formulário de contato.
+- **sobre.html:** página com mais informações sobre mim.
+- **style.css:** arquivo responsável pela aparência e organização das páginas.
 
-## Recursos de CSS utilizados
+## Acesse o site
 
-- Seletores de elementos e classes.
-- Cores, fontes e alinhamentos.
-- Margens e espaçamentos internos.
-- Bordas arredondadas e sombras.
-- Estilização de imagens e formulários.
-- Efeitos ao passar o mouse.
-- Media queries para telas menores.
-- Arquivo CSS externo compartilhado entre as páginas.
+[Minha Página Pessoal](https://willnemo13.github.io/pagina-pessoal/)
 
-## Site publicado
-
-Acesse o projeto pelo GitHub Pages:
-
-https://willnemo13.github.io/pagina-pessoal/
-
-## Captura de tela
-
-### Formulário de contato
+## Imagem do projeto
 
 <img width="1877" height="768" alt="formulario-contato" src="https://github.com/user-attachments/assets/43996ee5-dc09-4390-a11d-c9f5ed2d146f" />
 
 ---
 
-Desenvolvido por **Will Gonçalves**.
+Desenvolvido por Will Gonçalves.
