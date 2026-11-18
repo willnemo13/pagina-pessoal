@@ -1,0 +1,275 @@
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+/*Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1eef6;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+}
+
+/* Cabeçalho, navegação e rodapé */
+header, nav, footer {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #4b3475;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #e2d8ef;
+    padding: 14px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #4b3475;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px 10px;
+}
+
+nav a:hover {
+    color: #321d55;
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    grid-column: 2;
+    width: 100%;
+    margin: 28px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.cartao {
+    background-color: white;
+    border: 1px solid #ded6e8;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(40, 25, 60, 0.08);
+}
+
+h2 {
+    color: #5b3b85;
+    font-size: 24px;
+    margin-top: 0;
+    border-bottom: 2px solid #e2d8ef;
+    padding-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.destaque {
+    color: #5b3b85;
+    font-weight: bold;
+}
+
+/* Imagem pessoal */
+.foto-perfil {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 4px solid #7652a8;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto 20px;
+}
+
+/* Listas */
+.lista-interesses li {
+    margin-bottom: 10px;
+}
+
+.lista-tecnologias {
+    padding: 20px 35px;
+}
+
+/* Seções que ocupam a largura inteira */
+.largura-total,
+#tecnologias,
+#contato {
+    grid-column: 1 / 3;
+}
+
+/* Cartões de tecnologias */
+.grade-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.card-tecnologia {
+    background-color: #f8f5fc;
+    border: 1px solid #ded6e8;
+    border-radius: 8px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-tecnologia h3 {
+    color: #4b3475;
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-tecnologia p {
+    margin: 0;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: #e2d8ef;
+    color: #4b3475;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* Formulário */
+.form-contato {
+    background-color: #f8f5fc;
+    border: 1px solid #ded6e8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-contato label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b9aacb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-contato button {
+    background-color: #5b3b85;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background-color: #3f2a65;
+}
+
+/* Links e rodapé */
+a {
+    color: #65449a;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #e2d8ef;
+}
+/*Tablets */
+@media (max width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .largura-total,
+    #tecnologias,
+    #contato {
+        grid-column: 1;
+    }
+}
+/* Telas menores */
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    header, nav, main, footer {
+        grid-column: 1;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 0 12px;
+    }
+
+    .largura-total,
+    #tecnologias,
+    #contato {
+        grid-column: 1;
+    }
+
+    .grade-tecnologias {
+        grid-template-columns: 1fr;
+    header {
+        padding: 20px 12px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+    .cartao {
+        padding: 18px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .form-contato {
+        padding: 12px;
+    }
+}
+
