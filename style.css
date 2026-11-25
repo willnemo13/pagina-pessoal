@@ -1,3 +1,4 @@
+
 /* Configurações gerais */
 * {
     box-sizing: border-box;
@@ -15,32 +16,30 @@ body {
     color: #333;
     margin: 0;
     line-height: 1.6;
-
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    grid-template-columns: 1fr;
 }
 
 /* Cabeçalho, navegação e rodapé */
 header, nav, footer {
-    grid-column: 1 / 4;
     text-align: center;
 }
 
 header, footer {
     background-color: #4b3475;
     color: white;
-    padding: 25px;
+    padding: 1.5rem;
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
+/* Navegação com Flexbox */
 nav {
     background-color: #e2d8ef;
     padding: 14px;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -51,7 +50,7 @@ nav a {
     color: #4b3475;
     text-decoration: none;
     font-weight: bold;
-    margin: 8px 10px;
+    padding: 8px 10px;
 }
 
 nav a:hover {
@@ -61,12 +60,12 @@ nav a:hover {
 
 /* Conteúdo principal */
 main {
-    grid-column: 2;
     width: 100%;
-    margin: 28px 0;
-
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 12px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 18px;
 }
 
@@ -80,14 +79,14 @@ main {
 
 h2 {
     color: #5b3b85;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 0;
     border-bottom: 2px solid #e2d8ef;
     padding-bottom: 8px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 14px;
 }
 
@@ -120,7 +119,7 @@ p {
 .largura-total,
 #tecnologias,
 #contato {
-    grid-column: 1 / 3;
+    grid-column: 1;
 }
 
 /* Cartões de tecnologias */
@@ -135,7 +134,6 @@ p {
     border: 1px solid #ded6e8;
     border-radius: 8px;
     padding: 15px;
-
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -151,7 +149,7 @@ p {
     margin: 0;
 }
 
-/* Tags */
+/* Tags com Flexbox */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -220,54 +218,46 @@ footer a:hover {
     color: #e2d8ef;
 }
 
-/* Tablets */
-@media (max-width: 900px) {
+/* Tablets: duas colunas de tecnologias */
+@media (min-width: 600px) {
+    .grade-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        padding: 25px;
+    }
+}
+
+/* Computadores: organização em três colunas */
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    }
+
+    header, nav, footer {
+        grid-column: 1 / 4;
+    }
+
     main {
-        grid-template-columns: 1fr;
+        grid-column: 2;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
     }
 
     .largura-total,
     #tecnologias,
     #contato {
-        grid-column: 1;
+        grid-column: 1 / 3;
     }
-}
 
-/* Cartões em tablets */
-@media (min-width: 768px) {
-    .grade-tecnologias {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Computadores */
-@media (min-width: 1024px) {
     .grade-tecnologias {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Telas menores */
+/* Telas pequenas */
 @media (max-width: 600px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-
-    header, nav, main, footer {
-        grid-column: 1;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-        padding: 0 12px;
-    }
-
-    .largura-total,
-    #tecnologias,
-    #contato {
-        grid-column: 1;
-    }
-
     header {
         padding: 20px 12px;
     }
