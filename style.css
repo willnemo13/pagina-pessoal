@@ -1,9 +1,9 @@
-
 /* Configurações gerais */
 * {
     box-sizing: border-box;
 }
-/*Imagens responsivas */
+
+/* Imagens responsivas */
 img {
     max-width: 100%;
     height: auto;
@@ -126,7 +126,7 @@ p {
 /* Cartões de tecnologias */
 .grade-tecnologias {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
 }
 
@@ -219,17 +219,34 @@ footer a {
 footer a:hover {
     color: #e2d8ef;
 }
-/*Tablets */
-@media (max width: 900px) {
+
+/* Tablets */
+@media (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
     }
+
     .largura-total,
     #tecnologias,
     #contato {
         grid-column: 1;
     }
 }
+
+/* Cartões em tablets */
+@media (min-width: 768px) {
+    .grade-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Computadores */
+@media (min-width: 1024px) {
+    .grade-tecnologias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Telas menores */
 @media (max-width: 600px) {
     body {
@@ -251,25 +268,27 @@ footer a:hover {
         grid-column: 1;
     }
 
-    .grade-tecnologias {
-        grid-template-columns: 1fr;
     header {
         padding: 20px 12px;
     }
+
     header h1 {
         font-size: 1.6rem;
     }
+
     .cartao {
         padding: 18px;
     }
+
     h2 {
         font-size: 1.3rem;
     }
+
     p {
         font-size: 1rem;
     }
+
     .form-contato {
         padding: 12px;
     }
 }
-
