@@ -1,28 +1,40 @@
 # Minha Página Pessoal
 
-Este projeto foi desenvolvido como atividade da disciplina de Programação Web I.
+Projeto desenvolvido para a disciplina de **Programação Web I**, do curso Técnico em Informática para Internet.
 
-O objetivo é praticar HTML e CSS na criação de uma página pessoal, apresentando algumas informações, hobbies, interesses e um formulário de contato.
+## Objetivo
+
+Aplicar conceitos de HTML e CSS para desenvolver uma página pessoal responsiva, adaptável a smartphones, tablets e computadores.
 
 ## Tecnologias utilizadas
 
-- HTML
-- CSS
+- HTML5
+- CSS3
+- Flexbox
+- Grid Layout
+- Media Queries
 
-## Páginas
+## Responsividade
 
-- **index.html:** página inicial com minha apresentação e formulário de contato.
-- **sobre.html:** página com mais informações sobre mim.
-- **style.css:** arquivo responsável pela aparência e organização das páginas.
+A página foi adaptada para diferentes tamanhos de tela:
 
-## Acesse o site
+- **Celular:** abaixo de 768px — um cartão por linha.
+- **Tablet:** de 768px até 1023px — dois cartões por linha.
+- **Computador:** a partir de 1024px — três cartões por linha.
 
-[Minha Página Pessoal](https://willnemo13.github.io/pagina-pessoal/)
+## Testes realizados
 
-## Imagem do projeto
+Foram realizados testes utilizando as ferramentas de desenvolvedor do navegador, nas seguintes resoluções:
 
-<img width="1877" height="768" alt="formulario-contato" src="https://github.com/user-attachments/assets/43996ee5-dc09-4390-a11d-c9f5ed2d146f" />
+- 375 × 768px
+- 768 × 1024px
+- 1366 × 768px
 
----
+## Acesso ao projeto
+
+[Visualizar minha página pessoal](https://willnemo13.github.io/pagina-pessoal/)<img width="1912" height="1078" alt="b1" src="https://github.com/user-attachments/assets/8f82b054-3e38-4a32-afd7-ee4e05545ade" />
+<img width="1918" height="1078" alt="b2" src="https://github.com/user-attachments/assets/8b8d2209-611d-46a9-b995-56f8b928b54b" />
+<img width="1918" height="1078" alt="b3" src="https://github.com/user-attachments/assets/7118a655-6e9c-411f-9f68-056fbf588d2f" />
+
 
 Desenvolvido por Will Gonçalves.
